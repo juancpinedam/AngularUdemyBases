@@ -1,0 +1,37 @@
+<p>PAGINA DBZ!</p>
+
+<div class="row">
+
+  <div class="col">
+   <h3>Personajes</h3>
+   <hr>
+    <ul>
+
+      <li>Krilin 720</li>
+      <li>Goku 920</li>
+      <li>Vegeta 900</li>
+    </ul>
+
+  </div>
+
+
+  <div class="col">
+    <h3>Agregar {{nuevo.nombre}} </h3>
+    <hr>
+
+    <form (ngSubmit)="agregar()" >
+
+      <input type="text"
+      placeholder="nombre"
+      name="nombre"
+      [(ngModel)]="nuevo.nombre"/>
+      <input type="text" placeholder="poder" value="{{nuevo.poder}}" />
+
+      <button type="submit">Agregar</button>
+
+
+    </form>
+
+  </div>
+
+</div>
